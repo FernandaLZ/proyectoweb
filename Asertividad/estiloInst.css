@@ -1,0 +1,29 @@
+header {
+    
+    font-familiy: Comic sans-serif, "Times New Roman", Times, serif;
+    margin-top: 1cm;    
+    margin-bottom: 1cm;
+    
+    color: greenyellow;
+    border: 5px solid rgb(60, 60, 61);
+    height: 150px;
+    text-align: center;
+    font-size: 8ch;
+
+    background: radial-gradient(black, rgb(49, 243, 10)); 
+}
+
+p.Instrucciones{
+    background-color: rgb(42, 71, 201);
+    font-size: 6ch;
+    text-align: center;
+    
+    border: 5px solid black;
+}
+
+p.Listo{
+    font-size: 4ch;
+    background-color: yellow;
+    color: black;
+    border: 5px solid black;
+}

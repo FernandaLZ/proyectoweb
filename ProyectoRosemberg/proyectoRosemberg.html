@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Escala de Autoestima de Rosemberg</title>
+  <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>ESCALA DE AUTOESTIMA DE ROSEMBERG</h1><br>
+    <p>Por favor, conteste las siguientes frases con la respuesta que considerem&aacute;s apropiada.</p>
+   
+    <table>
+        <tr>
+          <td class = "header"><strong>A</strong></td>
+          <td class = "header"><strong>B</strong></td>
+          <td class = "header"><strong>C</strong></td>
+          <td class = "header"><strong>D</strong></td>
+        </tr>
+        <tr>
+          <td>Muy de acuerdo</td>
+          <td>De acuerdo</td>
+          <td>En desacuerdo</td>
+          <td>Muy en desacuerdo</td>
+        </tr>
+    </table>
+           
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <td><strong>A</strong></td>
+                <td><strong>B</strong></td>
+                <td><strong>C</strong></td>
+                <td><strong>D</strong></td>
+            </tr>
+        </thead>
+        <tr>
+            <td>1. Siento que soy una persona digna de aprecio, al menos en igual medida que los dem&aacute;s</td>
+            <td><input type="radio" name="q1" value="A" required></td>
+            <td><input type="radio" name="q1" value="B" required></td>
+            <td><input type="radio" name="q1" value="C" required></td>
+            <td><input type="radio" name="q1" value="D" required></td>
+          </tr>
+          <tr>
+            <td>2. Estoy convencido de que tengo cualidades buenas.</td>
+            <td><input type="radio" name="q2" value="A" required></td>
+            <td><input type="radio" name="q2" value="B" required></td>
+            <td><input type="radio" name="q2" value="C" required></td>
+            <td><input type="radio" name="q2" value="D" required></td>
+          </tr>
+          <tr>
+            <td>3. Soy capaz de hacer las cosas tan bien como la mayor&iacute;a de la gente.</td>
+            <td><input type="radio" name="q3" value="A" required></td>
+            <td><input type="radio" name="q3" value="B" required></td>
+            <td><input type="radio" name="q3" value="C" required></td>
+            <td><input type="radio" name="q3" value="D" required></td>
+          </tr>
+          <tr>
+            <td>4. Tengo una actitud positiva hacia m&iacute; mismo/a.</td>
+            <td><input type="radio" name="q4" value="A" required></td>
+            <td><input type="radio" name="q4" value="B" required></td>
+            <td><input type="radio" name="q4" value="C" required></td>
+            <td><input type="radio" name="q4" value="D" required></td>
+          </tr>
+          <tr>
+            <td>5. En general estoy satisfecho/a de m&iacute; mismo/a.</td>
+            <td><input type="radio" name="q5" value="A" required></td>
+            <td><input type="radio" name="q5" value="B" required></td>
+            <td><input type="radio" name="q5" value="C" required></td>
+            <td><input type="radio" name="q5" value="D" required></td>
+          </tr>
+          <tr>
+            <td>6. Siento que no tengo mucho de lo que estar orgulloso/a.</td>
+            <td><input type="radio" name="q6" value="A" required></td>
+            <td><input type="radio" name="q6" value="B" required></td>
+            <td><input type="radio" name="q6" value="C" required></td>
+            <td><input type="radio" name="q6" value="D" required></td>
+          </tr>
+          <tr>
+            <td>7. En general, me inclino a pensar que soy un fracasado/a.</td>
+            <td><input type="radio" name="q7" value="A" required></td>
+            <td><input type="radio" name="q7" value="B" required></td>
+            <td><input type="radio" name="q7" value="C" required></td>
+            <td><input type="radio" name="q7" value="D" required></td>
+          </tr>
+          <tr>
+            <td>8. Me gustar&iacute;a poder sentir m&aacute;s respeto por mi mismo.</td>
+            <td><input type="radio" name="q8" value="A" required></td>
+            <td><input type="radio" name="q8" value="B" required></td>
+            <td><input type="radio" name="q8" value="C" required></td>
+            <td><input type="radio" name="q8" value="D" required></td>
+          </tr>
+          <tr>
+            <td>9. Hay veces que realmente pienso que soy un in&uacute;til.</td>
+            <td><input type="radio" name="q9" value="A" required></td>
+            <td><input type="radio" name="q9" value="B" required></td>
+            <td><input type="radio" name="q9" value="C" required></td>
+            <td><input type="radio" name="q9" value="D" required></td>
+          </tr>
+          <tr>
+            <td>10. A veces creo que no soy buena persona.</td>
+            <td><input type="radio" name="q10" value="A" required></td>
+            <td><input type="radio" name="q10" value="B" required></td>
+            <td><input type="radio" name="q10" value="C" required></td>
+            <td><input type="radio" name="q10" value="D" required></td>
+          </tr>
+    </table>
+
+    <a href="instrucciones.html"><button>Regresar</button></a>
+    <button onclick="calcularPuntaje()">Calcular puntaje</button>
+
+    <div id="resultado"></div>
+    </body>
+</html>

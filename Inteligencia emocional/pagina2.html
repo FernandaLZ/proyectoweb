@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<title>Test de inteligencia emocional</title>
+  <style>
+    body{
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+    }
+    table{
+      border-collapse: collapse;
+      border: 1px solid black;
+    }
+    td{
+      border: 1px solid black;
+      height: 30px;
+    }
+    th{
+      border: 1px solid black;
+      height: auto;
+    }
+    .Num{
+      width: 30px;
+      text-align: center;
+      padding: 2px;
+    }
+    .Texto{
+      padding-left: 7px;
+      width: 400px;
+    }
+    .Param{
+      text-align: center;
+      width: 30px;
+    }
+    .eval{
+      text-align: center;
+    }
+    .Ent{
+      width: auto;
+    }
+    button{
+      position: absolute;
+      left: 620px;
+    }
+  </style>
+</head>
+<body>
+	<h1>Evaluar emociones y sentimientos</h1>
+	<p>Lee las siguientes afirmaciones sobre tus emociones y sentimientos e indica el grado de acuerdo o de desacuerdo con respecto a las mismas.</p>
+	<table>
+		<tr>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+		</tr>
+		<tr>
+			<td class="eval">Nada de acuerdo</td>
+			<td class="eval">Algo de acuerdo</td>
+			<td class="eval">Bastante de acuerdo</td>
+			<td class="eval">Muy de acuerdo</td>
+			<td class="eval">Totalmente de acuerdo</td>
+		</tr>
+    </table>
+	<p>No hay respuestas correctas o incorrectas, marca la que más se aproxime a tus preferencias y ¡no emplees demasiado tiempo en cada uno de ellas!</p>
+    <table>
+		<!-- 24 rows with inputs -->
+        <tr>
+            <td class="Num">1.</td>
+            <td class="Texto">Presto mucha atención a los sentimientos.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row1" id="row1" min="1" max="5"></td>
+          </tr>
+        <!---->
+        <tr>
+            <td class="Num">2.</td>
+            <td class="Texto">Normalmente me preocupo por lo que siento.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row2" id="row2" min="1" max="5"></td>
+          </tr>
+          <tr>
+            <td class="Num">3.</td>
+            <td class="Texto">Normalmente dedico tiempo a pensar en mis emociones.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row3" id="row3" min="1" max="5"></td>
+          </tr>
+          <td class="Num">4.</td>
+            <td class="Texto">Pienso que merece la pena prestar atención a mis emociones.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row4" id="row4" min="1" max="5"></td>
+          </tr>
+          <tr>
+            <td class="Num">5.</td>
+            <td class="Texto">Dejo que mis sentimientos afecten a mis pensamientos.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row5" id="row5" min="1" max="5"></td>
+          </tr>
+          <td class="Num">6.</td>
+            <td class="Texto">Pienso en mi estado de ánimo constantemente.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row6" id="row6" min="1" max="5"></td>
+          </tr>
+          <tr>
+            <td class="Num">7.</td>
+            <td class="Texto">A menudo pienso en mis sentimientos.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row7" id="row7" min="1" max="5"></td>
+          </tr>
+          <td class="Num">8.</td>
+            <td class="Texto">Presto mucha atención a cómo me siento.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row8" id="row8" min="1" max="5"></td>
+          </tr>
+          <!-------------------------------------------------->
+          <tr>
+            <td class="Num">9.</td>
+            <td class="Texto">Tengo claros mis sentimientos.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row9" id="row9" min="1" max="5"></td>
+          </tr>
+        <tr>
+            <td class="Num">10.</td>
+            <td class="Texto">Frecuentemente puedo definir mis sentimientos.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row10" id="row10" min="1" max="5"></td>
+          </tr>
+          <tr>
+            <td class="Num">11.</td>
+            <td class="Texto">Casi siempre sé cómo me siento.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row11" id="row11" min="1" max="5"></td>
+          </tr>
+          <td class="Num">12.</td>
+            <td class="Texto">Normalmente conozco mis sentimientos sobre las personas.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row12" id="row12" min="1" max="5"></td>
+          </tr>
+          <tr>
+            <td class="Num">13.</td>
+            <td class="Texto">A menudo me doy cuenta de mis sentimientos en diferentes situaciones.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row13" id="row13" min="1" max="5"></td>
+          </tr>
+          <td class="Num">14.</td>
+            <td class="Texto">Siempre puedo decir cómo me siento.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row14" id="row14" min="1" max="5"></td>
+          </tr>
+          <tr>
+            <td class="Num">15.</td>
+            <td class="Texto">A veces puedo decir cuáles son mis emociones.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row15" id="row15" min="1" max="5"></td>
+          </tr>
+          <td class="Num">16.</td>
+            <td class="Texto">Puedo llegar a comprender mis sentimientos.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row16" id="row16" min="1" max="5"></td>
+          </tr>
+          <!-------------------------------------------------->
+          <tr>
+            <td class="Num">17.</td>
+            <td class="Texto">Aunque a veces me siento triste, suelo tener una visión positiva.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row17" id="row17" min="1" max="5"></td>
+          </tr>
+        <tr>
+            <td class="Num">18.</td>
+            <td class="Texto">Aunque me sienta mal, procuro pensar en cosas agradables.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row18" id="row18" min="1" max="5"></td>
+          </tr>
+          <tr>
+            <td class="Num">19.</td>
+            <td class="Texto">Cuando estoy triste, pienso en todos los placeres de la vida.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row19" id="row19" min="1" max="5"></td>
+          </tr>
+          <td class="Num">20.</td>
+            <td class="Texto">Intento tener pensamientos positivos aunque me sienta mal.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row20" id="row20" min="1" max="5"></td>
+          </tr>
+          <tr>
+            <td class="Num">21.</td>
+            <td class="Texto">Si doy demasiadas vueltas a las cosas, complicándolas, trato de calmarme.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row21" id="row21" min="1" max="5"></td>
+          </tr>
+            <td class="Num">22.</td>
+            <td class="Texto">Me preocupo por tener un buen estado de ánimo.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row22" id="row22" min="1" max="5"></td>
+          </tr>
+          <tr>
+            <td class="Num">23.</td>
+            <td class="Texto">Tengo mucha energía cuando me siento feliz.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row23" id="row23" min="1" max="5"></td>
+          </tr>
+          <td class="Num">24.</td>
+            <td class="Texto">Cuando estoy enfadado intento cambiar mi estado de ánimo.</td>
+            <td class="Param">1</td>
+            <td class="Param">2</td>
+            <td class="Param">3</td>
+            <td class="Param">4</td>
+            <td class="Param">5</td>
+            <td class="Ent"><input type="number" name="row24" id="row24" min="1" max="5"></td>
+          </tr>
+	</table>
+    
+  <p>¿Cuál es tu género?</p>
+	<input type="radio" name="gender" value="male">Hombre
+	<input type="radio" name="gender" value="female">Mujer
+	<br><br>
+	<button id="evaluar">Evaluar</button>
+  <br><br><br>
+
+	<script>
+		const evaluarBtn = document.getElementById('evaluar');
+		evaluarBtn.addEventListener('click', () => {
+			let atencion = 0;
+			let claridad = 0;
+			let reparacion = 0;
+      var x, y;
+
+			try{
+        x=1;
+        y=1;
+        for (let i = 1; i <= 8; i++) {
+          const value = parseInt(document.getElementById(`row${i}`).value);
+          if (isNaN(value) || value < 1 || value > 5) {
+            alert(`Valor no válido en la pregunta ${i}`);
+            y=-1;
+          }
+          atencion += value;
+        }
+
+        for (let i = 9; i <= 16; i++) {
+          const value = parseInt(document.getElementById(`row${i}`).value);
+          if (isNaN(value) || value < 1 || value > 5) {
+            alert(`Valor no válido en la pregunta ${i}`);
+            y=-1;
+          }
+          claridad += value;
+        }
+
+        for (let i = 17; i <= 24; i++) {
+          const value = parseInt(document.getElementById(`row${i}`).value);
+          if (isNaN(value) || value < 1 || value > 5) {
+            alert(`Valor no válido en la pregunta ${i}`);
+            y=-1;
+          }
+          reparacion += value;
+        }
+
+        var gender = document.querySelector('input[name="gender"]:checked').value;
+      }
+      catch{
+        if(y!=-1)
+          alert("Debes llenar todos los campos");
+        x = -1;
+        return;
+      }
+      finally{
+        if (x!=-1 && y!=-1)
+          window.location.href = `pagina3.html?atencion=${atencion}&claridad=${claridad}&reparacion=${reparacion}&gender=${gender}`;
+        else
+          return;
+      }
+			
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hoja de resultados</h1>
+    <p id="resultado"></p>
+
+</body>
+<script>
+    var resultado = parseInt(getUrlParam("resultado"));
+    document.getElementById("resultado").innerHTML = resultado;
+
+    function getUrlParam(param){
+        var contFinal = localStorage.getItem('contFinal');
+        document.getElementById('resultado').textContent = "El resultado es: " + contFinal;
+        if(contFinal<15){
+            document.writeln("<h1> No se puede mostrar el resultado ya que no has contestado todas las preguntas, trata de nuevo</h1>");
+        }
+        if (contFinal>=15 && contFinal<22 ){
+            document.writeln("<h1> ¡El resultado es " + contFinal + "!</h1>");
+            document.writeln("Asertividad muy baja, usted es muy inseguro.");
+        }
+        if(contFinal==22 || contFinal==23){
+            document.writeln("<h1> ¡El resultado es " + contFinal + "!</h1>");
+            document.writeln("Asertividad baja, Usted es inseguro");
+        }
+        if(contFinal>23 && contFinal<=30){
+            document.writeln("<h1> ¡El resultado es " + contFinal + "!</h1>");
+            document.writeln("Usted tiene una Asertividad media, normal");
+        }
+        if(contFinal>30 && contFinal<=36){
+            document.writeln("<h1> ¡El resultado es " + contFinal + "!</h1>");
+            document.writeln("Usted tiene una Asertividad más que media. ¡Muy bien!");
+        }
+        if(contFinal==37 || contFinal==38){
+            document.writeln("<h1> ¡El resultado es " + contFinal + "!</h1>");
+            document.writeln("Usted tiene una Asertividad solida");
+        }
+        if(contFinal>38 && contFinal<45){
+            document.writeln("<h1> ¡El resultado es " + contFinal + "!</h1>");
+            document.writeln("Asertividad muy alta. ¡Excelente!");
+        }
+        if(contFinal==45){
+            document.writeln("<h1> ¡El resultado es " + contFinal + "!</h1>");
+            document.writeln("Asertividad o seguridad máxima");
+        }
+    }
+
+</script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .flex-container {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            
+            .flex-container > div {
+              margin: 10px;
+              padding: 20px;
+              font-size: 30px;
+              width: 400px;
+            }
+            .relative{
+                position: relative;
+            }
+            #grafica{
+                z-index: 1;
+            }
+            #labelA{
+                z-index: 3;
+                position: absolute;
+                top:100px;
+                left: -40px;
+                font-size: 10px;
+            }
+            #labelB{
+                z-index: 3;
+                position: absolute;
+                bottom:100px;
+                right: -100px;
+                font-size:10px;
+            }#labelC{
+                z-index: 3;
+                position: absolute;
+                bottom:100px;
+                left: -40px;
+                font-size: 10px;
+            }
+            </style>
+        <link rel="stylesheet" href="estilos.css" media="screen">
+    </head>
+    <body>
+        <h1 id="anexo">Anexo B</h1>
+        <h1>Diagrama de la Motivaci&oacute;n Personal</h1>
+        <div class="flex-container">
+            <div class="relative">
+                <canvas id="grafica" width="400" height="400"></canvas>
+                <p id="labelA" >Columna A <br> Poder ___ % </p>
+                <p id="labelB" >Columna B <br> Realización Personal ___ % </p>
+                <p id="labelC" >Columna C <br> Afiliación ___ % </p>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+        <script src="guardadatos.js"></script>
+        <A HREF="a.html" Target="_blank">Personas Motivadas por Poder (A) </A><br>
+        <A HREF="b.html" Target="_blank">Personas Motivadas por Afiliaci&oacute;n (B) </A><br>
+        <A HREF="c.html" Target="_blank">Personas Motivadas por Afiliaci&oacute;n (C) </A>
+    </body>
+</html>

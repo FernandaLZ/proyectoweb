@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<title>Test de inteligencia emocional</title>
+	<style type="text/css">
+		body {
+			font-family: 'Lato', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		.container {
+			max-width: 800px;
+            font-size: 18px;
+            padding-left: 15px;
+		}
+		p {
+			margin-bottom: 20px;
+			font-size: 20px;
+            padding-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Resultados del test de inteligencia emocional</h1>
+    <p>Tus resultados del test de inteligencia emocional son:</p>
+	<div class="container">
+        <ul>
+            <script>
+                const urlParams = new URLSearchParams(window.location.search);
+                const atencion = parseInt(urlParams.get('atencion'));
+                const claridad = parseInt(urlParams.get('claridad'));
+                const reparacion = parseInt(urlParams.get('reparacion'));
+                const gender = urlParams.get('gender');
+
+                if (gender === 'male') {
+                    if (atencion <= 21) {
+                        document.write('<li>Debes mejorar tu atención: prestas poca atención.</li>');
+                    } else if (atencion >= 22 && atencion <= 32) {
+                        document.write('<li>Atención adecuada.</li>');
+                    } else {
+                        document.write('<li>Debes mejorar tu atención: prestas demasiada atención.</li>');
+                    }
+
+                    if (claridad <= 25) {
+                        document.write('<li>Debes mejorar tu claridad.</li>');
+                    } else if (claridad >= 26 && claridad <= 35) {
+                        document.write('<li>Claridad adecuada.</li>');
+                    } else {
+                        document.write('<li>Excelente claridad.</li>');
+                    }
+
+                    if (reparacion <= 23) {
+                        document.write('<li>Debes mejorar tu reparación.</li>');
+                    } else if (reparacion >= 24 && reparacion <= 35) {
+                        document.write('<li>Reparación adecuada.</li>');
+                    } else {
+                        document.write('<li>Excelente reparación.</li>');
+                    }
+
+                }
+
+                else{
+                    if (atencion <= 24) {
+                        document.write('<li>Debes mejorar tu atención: prestas poca atención.</li>');
+                    } else if (atencion >= 25 && atencion <= 35) {
+                        document.write('<li>Atención adecuada.</li>');
+                    } else {
+                        document.write('<li>Debes mejorar tu atención: prestas demasiada atención.</li>');
+                    }
+
+                    if (claridad <= 23) {
+                        document.write('<li>Debes mejorar tu claridad.</li>');
+                    } else if (claridad >= 24 && claridad <= 34) {
+                        document.write('<li>Claridad adecuada.</li>');
+                    } else {
+                        document.write('<li>Excelente claridad.</li>');
+                    }
+
+                    if (reparacion <= 23) {
+                        document.write('<li>Debes mejorar tu reparación.</li>');
+                    } else if (reparacion >= 24 && reparacion <= 34) {
+                        document.write('<li>Reparación adecuada.</li>');
+                    } else {
+                        document.write('<li>Excelente reparación.</li>');
+                    }
+                }
+            </script>
+        </ul>
+    </div>
+</body>
+</html>
+			

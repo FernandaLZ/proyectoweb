@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+	    <title>Resultados</title>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+        <form method="post" action="Registrar.php">
+          <h3>Nombre registrado:</h3>
+          <p id="Nreg"></p>
+
+          <h3>Resultado final aptitudes:</h3>
+          <table>
+            <tr>
+                <td id="aptitud"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="ap"></p>
+                </td>
+            </tr>
+          </table>
+          
+          <h3>Resultado final Interes:</h3>
+          <table>
+            <tr>
+                <td id="interes"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="in"></p>
+                </td>
+            </tr>
+          </table>
+          
+          <div id="Finalizar"></div>
+        </form>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const C1 = parseInt(urlParams.get('C1'));
+            const C2 = parseInt(urlParams.get('C2'));
+            const H1 = parseInt(urlParams.get('H1'));
+            const H2 = parseInt(urlParams.get('H2'));
+            const A1 = parseInt(urlParams.get('A1'));
+            const A2 = parseInt(urlParams.get('A2'));
+            const S1 = parseInt(urlParams.get('S1'));
+            const S2 = parseInt(urlParams.get('S2'));
+            const I1 = parseInt(urlParams.get('I1'));
+            const I2 = parseInt(urlParams.get('I2'));
+            const D1 = parseInt(urlParams.get('D1'));
+            const D2 = parseInt(urlParams.get('D2'));
+            const E1 = parseInt(urlParams.get('E1'));
+            const E2 = parseInt(urlParams.get('E2'));
+            const namee = urlParams.get('namee');
+
+            if(C1>H1 && C1>A1 && C1>S1 && C1>I1 && C1>D1 && C1>E1){
+                document.getElementById("interes").innerHTML="<input type='text' name='inte' id='inte' readonly='readonly' value='Administrativas y Contables'>";
+                document.getElementById("in").innerHTML="<h4>Organizativo<h4>Supervision<h4>Orden<h4>Analisis y Sintesis<h4>Colaboracion<h4>Calculo";
+            }
+
+            if(H1>C1 && H1>A1 && H1>S1 && H1>I1 && H1>D1 && H1>E1){
+                document.getElementById("interes").innerHTML="<input type='text' name='inte' id='inte' readonly='readonly' value='Humanisticas y Sociales'>";
+                document.getElementById("in").innerHTML="<h4>Presicion verbal <h4>Organizacion <h4>Relacion de Hechos <h4>Lingüistica <h4>Orden <h4>Justicia";
+            }
+
+            if(A1>C1 && A1>H1 && A1>S1 && A1>I1 && A1>D1 && A1>E1){
+                document.getElementById("interes").innerHTML="<input type='text' name='inte' id='inte' readonly='readonly' value='Artisticas'>";
+                document.getElementById("in").innerHTML="<h4>Estetico <h4>Armonico <h4>Manual <h4>Visual <h4>Auditivo";
+            }
+
+            if(S1>C1 && S1>H1 && S1>A1 && S1>I1 && S1>D1 && S1>E1){
+                document.getElementById("interes").innerHTML="<input type='text' name='inte' id='inte' readonly='readonly' value='Medicina y Ciencias de la Salud'>";
+                document.getElementById("in").innerHTML="<h4>Asistir <h4>Investigativo <h4>Presicion <h4>Senso-Perceptivo <h4>Analitico <h4>Ayudar";
+            }
+
+            if(I1>C1 && I1>H1 && I1>A1 && I1>S1 && I1>D1 && I1>E1){
+                document.getElementById("interes").innerHTML="<input type='text' name='inte' id='inte' readonly='readonly' value='Ingenieria y Computacion'>";
+                document.getElementById("in").innerHTML="<h4>Calculo <h4>Cientifico <h4>Manual <h4>Exacto <h4>Planificar";
+            }
+
+            if(D1>C1 && D1>H1 && D1>A1 && D1>S1 && D1>I1 && D1>E1){
+                document.getElementById("interes").innerHTML="<input type='text' name='inte' id='inte' readonly='readonly' value='Defensa y Seguridad'>";
+                document.getElementById("in").innerHTML="<h4>Justicia <h4>Equidad <h4>Colaboracion <h4>Espiritu de Equipo <h4>Liderazgo";
+            }
+
+            if(E1>C1 && E1>H1 && E1>A1 && E1>S1 && E1>I1 && E1>D1){
+                document.getElementById("interes").innerHTML="<input type='text' name='inte' id='inte' readonly='readonly' value='Ciencias Exactas y Agrarias'>";
+                document.getElementById("in").innerHTML="<h4>Clasificar <h4>Numerico <h4>Analisis y Sintesis <h4>Organizacion <h4>Orden <h4>Investigacion";
+            }
+
+            if(C2>H2 && C2>A2 && C2>S2 && C2>I2 && C2>D2 && C2>E2){
+                document.getElementById("aptitud").innerHTML="<input type='text' name='apt' id='apt' readonly='readonly' value='Administrativas y Contables'>";
+                document.getElementById("ap").innerHTML="<h4>Persuasivo <h4>Objetivo <h4>Práctico <h4>Tolerante <h4>Responsable <h4>Ambicioso";
+
+            }
+
+            if(H2>C2 && H2>A2 && H2>S2 && H2>I2 && H2>D2 && H2>E2){
+                document.getElementById("aptitud").innerHTML="<input type='text' name='apt' id='apt' readonly='readonly' value='Humanisticas y Sociales'>";
+                document.getElementById("ap").innerHTML="<h4>Responsable <h4>Justo <h4>Conciliador <h4>Persuasivo <h4>Sagaz <h4>Imaginativo";
+
+            }
+
+            if(A2>C2 && A2>H2 && A2>S2 && A2>I2 && A2>D2 && A2>E2){
+                document.getElementById("aptitud").innerHTML="<input type='text' name='apt' id='apt' readonly='readonly' value='Artisticas'>";
+                document.getElementById("ap").innerHTML="<h4>Sensibles <h4>Imaginativo <h4>Creativo <h4>Detallista <h4>Inovador <h4>Intuitivo";
+
+            }
+
+            if(S2>C2 && S2>H2 && S2>A2 && S2>I2 && S2>D2 && S2>E2){
+                document.getElementById("aptitud").innerHTML="<input type='text' name='apt' id='apt' readonly='readonly' value='Medicina y Ciencias de la Salud'>";
+                document.getElementById("ap").innerHTML="<h4>Altruista <h4>Solidario <h4>Paciente <h4>Comprensivo <h4>Respetuoso <h4>Persuasivo";
+
+            }
+
+            if(I2>C2 && I2>H2 && I2>A2 && I2>S2 && I2>D2 && I2>E2){
+                document.getElementById("aptitud").innerHTML="<input type='text' name='apt' id='apt' readonly='readonly' value='Ingenieria y Computacion'>";
+                document.getElementById("ap").innerHTML="<h4>Preciso <h4>Practico <h4>Critico <h4>Analitico <h4>Rigido";
+
+            }
+
+            if(D2>C2 && D2>H2 && D2>A2 && D2>S2 && D2>I2 && D2>E2){
+                document.getElementById("aptitud").innerHTML="<input type='text' name='apt' id='apt' readonly='readonly' value='Defensa y Seguridad'>";
+                document.getElementById("ap").innerHTML="<h4>Arriesgado <h4>Solidario <h4>Valiente <h4>Agresivo <h4>Persuasivo";
+
+            }
+
+            if(E2>C2 && E2>H2 && E2>A2 && E2>S2 && E2>I2 && E2>D2){
+                document.getElementById("aptitud").innerHTML="<input type='text' name='apt' id='apt' readonly='readonly' value='Ciencias Exactas y Agrarias'>";
+                document.getElementById("ap").innerHTML="<h4>Metodico <h4>Analitico <h4>Observador <h4>Introvertido <h4>Paciente <h4>Seguro";
+
+            }
+
+            document.getElementById("Finalizar").innerHTML="<input type='submit' value='Finalizar'>"
+            document.getElementById("Nreg").innerHTML="<input type='text' name='nreg' id='a' readonly='readonly' value="+namee+">";
+        </script>
+    </body>
+</html>
